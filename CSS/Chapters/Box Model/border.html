@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Border</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .pad {
+      height: 100px;
+      width: 200px; 
+      padding: 10px;
+      margin: 20px; 
+      box-sizing: border-box;    
+    }
+    #first {
+      border: 5px dotted black;
+      border-radius: 25px;
+      background-color: lightgreen;
+    }
+    #second {
+      border: 3px dashed blue;
+      border-radius: 5px 30px 50px 10px;
+      background-color: lightcoral;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="first" class="pad"><h1>First box</h1></div>
+  <button id="second" class="pad"><h1>Second box</h1></button>
+  
+</body>
+</html>
