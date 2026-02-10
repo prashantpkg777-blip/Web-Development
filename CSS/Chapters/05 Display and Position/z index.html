@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Properties: Z-Index</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .box {
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+      background-color: aqua;
+      border: 5px solid black;
+
+    }
+    #box1 {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+      /* this element will be behind box2 and box3 */
+    }
+    #box2 {
+      position: absolute;
+      top: 75px;
+      left: 75px;
+      z-index: 2;
+      /* this element will be in front of box1 and behind box3 */
+    }
+
+  </style>
+</head>
+<body>
+  <div id="box1" class="box">Box 1</div>
+  <div id="box2" class="box">Box 2</div>
+</body>
+</html>
