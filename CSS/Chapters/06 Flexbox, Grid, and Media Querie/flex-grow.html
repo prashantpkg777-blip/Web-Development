@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Properties</title>
+  <style>
+    #container {
+      width: 600px;
+      height: 800px;
+      background-color: azure;
+      border: 2px solid black;
+      display: flex; 
+      flex-wrap: wrap;
+      align-items: center; 
+      align-content: center; 
+    }
+    .box {
+      width: 500px;
+      height: 100px;
+      background-color: rgb(76, 218, 5);
+      margin: 5px;
+      border: 3px solid black;
+    }
+    #box3 {
+      background-color: orange;
+      flex-grow: 2; /* Allow this item to grow more than others */
+    }
+    
+    
+   
+  </style>
+</head>
+<body>
+  <h1>Flexbox Properties Example</h1>
+  <div id="container">
+    <div id="box1" class="box">Item 1</div>
+    <div id="box2" class="box">Item 2</div>
+    <div id="box3" class="box">Item 3</div>
+    <div id="box4" class="box">Item 4</div>
+
+  </div>
+</body>
+</html>

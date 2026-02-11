@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Properties</title>
+  <style>
+    #container {
+      width: 300px;
+      height: 800px;
+      background-color: azure;
+      border: 2px solid black;
+      display: flex; 
+      
+      flex-direction: row-reverse; /* Change this to row, row-reverse, column, or column-reverse to see different layouts */
+      align-items: center; /* Align items along the cross axis */
+      align-content: center; /* Align wrapped lines along the cross axis */
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(76, 218, 5);
+      margin: 5px;
+      border: 3px solid black;
+    }
+    
+    #box2 {
+      background-color: blueviolet;
+      align-self: flex-end; /* Override alignment for this specific item */
+    }
+    #box3 {
+      background-color: coral;
+      flex-shrink: 5; /* Allow this item to shrink more than others */
+    }
+   
+  </style>
+</head>
+<body>
+  <h1>Flexbox Properties Example</h1>
+  <div id="container">
+    <div id="box1" class="box">Item 1</div>
+    <div id="box2" class="box">Item 2</div>
+    <div id="box3" class="box">Item 3</div>
+    <div id="box4" class="box">Item 4</div>
+
+  </div>
+</body>
+</html>
