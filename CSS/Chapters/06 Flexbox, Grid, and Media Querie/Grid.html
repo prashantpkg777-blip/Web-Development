@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid</title>
+
+<style>
+#container{
+  width:600px;
+  height:600px;
+  background:azure;
+  border:2px solid black;
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;   /* equal columns */
+  grid-template-rows: 150px 150px 150px;
+  gap:10px;
+}
+
+.box{
+  border:3px solid black;
+  color:white;
+  font-size:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#box1{
+  background:purple;
+  grid-column:1/3;   /* full width */
+}
+
+#box2{
+  background:blueviolet;
+}
+
+#box3{
+  background:orange;
+}
+
+#box4{
+  background:coral;
+  grid-column:1/3;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Grid Example</h1>
+
+<div id="container">
+  <div id="box1" class="box">Item1</div>
+  <div id="box2" class="box">Item2</div>
+  <div id="box3" class="box">Item3</div>
+  <div id="box4" class="box">Item4</div>
+</div>
+
+</body>
+</html>
