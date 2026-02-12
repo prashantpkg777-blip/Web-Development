@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice set 7 - Progress Bar</title>
+  <style>
+    .progress_container {
+      height: 30px;
+      width: 90%;
+      background-color: #f3f3f3;
+      border-radius: 25px;
+      margin: 20px auto;
+      border: 2px solid #ccc;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .progress_bar {
+
+      height: 100%;
+      width: 0;
+      background-color: #49a94c;
+      border-radius: 25px;
+      animation: loadProgress 5s forwards ease-in-out infinite;
+    }
+    @keyframes loadProgress {
+       0% { width: 0; }
+       90% { width: 90%; }
+       95% { width: 75%; }
+      100% { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Downloading File...</h1>
+  <div class="progress_container">
+    <div class="progress_bar"></div>
+  </div>
+</body>
+</html>
