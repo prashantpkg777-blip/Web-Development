@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Figtree-Regular, -apple-system, BlinkMacSystemFont,
+  Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 80px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Logo */
+.logo_img {
+  height: 36px;
+  width: 53px;
+}
+.logo {
+  margin-left: 4%;
+}
+
+/* Navbar */
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 520px;
+}
+
+.nav_bar a {
+  text-decoration: none;
+  letter-spacing: .3px;
+  color: #282c3f;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav_bar a:hover {
+  border-bottom: 3px solid #ff3f6c;
+  padding-bottom: 28px;
+}
+
+.super {
+  color: crimson;
+  font-size: 10px;
+}
+
+/* Search */
+.search_bar{
+  display: flex;
+  align-items: center;
+  width: 500px;           
+  height: 40px;
+  background-color: #f5f5f6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.search_icon{
+  padding: 10px;
+  font-size: 22px;
+  color: #282c3f;
+}
+
+.search_input{
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+/* Icons */
+.icons {
+  margin-right: 4%;
+}
+
+.icon_container {
+  display: flex;
+  gap: 25px;
+}
+
+/* each icon */
+.icon_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.icon_item:hover{
+  border-bottom: 3px solid #ff3f6c;
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+}
