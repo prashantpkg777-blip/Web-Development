@@ -22,3 +22,29 @@ let add = solve(5);
 console.log(add(10)); // 15
 
 // function in array
+
+let arr = [
+  function (a,b) {
+    return a + b;
+  },
+  function (a,b) {
+    return a * b;
+  },
+  function (a,b) {
+    return a - b;
+  }
+];
+console.log(arr[0](55,10)); // 65
+console.log(arr[1](6,20)); // 120
+console.log(arr[2](15,10)); // 5
+
+// function in object
+
+let obj = {
+  name: "Prashant",
+  age: 22,
+  greet: function() {
+    console.log("Hello, " + this.name);
+  }
+}
+obj.greet(); // Hello, Prashant
