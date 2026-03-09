@@ -12,3 +12,6 @@ console.log("The End"); //synchronous code
 // Hello Prashant
 // The End
 // This is setTimeout Function
+
+// synchronous code is code that gives output at same time 
+// asynchronous code is code that gives output after some time 
