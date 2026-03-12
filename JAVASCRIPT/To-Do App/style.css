@@ -1,0 +1,57 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(219, 98, 165);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+#mainHeading {
+  text-align: center;
+}
+
+.mainContainer {
+  width: 600px;
+  border: 5px solid black;
+  border-radius: 25px;
+  background-color:rgb(231, 124, 47);
+}
+.secContainer {
+  width: 600px;
+  border: 5px solid black;
+  border-radius: 25px;
+  background-color:rgb(152, 185, 215);
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns:200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#todoInput, #todoDate {
+  font-family: 15px;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+
+.btnTodo {
+  background-color: rgb(32, 190, 45);
+  color: white;
+  border-radius: 10px;
+  padding: 15px 0px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btnDelete {
+  background-color: rgb(195, 19, 19);
+  color: white;
+  border-radius: 10px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
